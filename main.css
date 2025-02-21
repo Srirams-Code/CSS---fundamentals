@@ -1,0 +1,123 @@
+*{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;  
+}
+
+
+
+/* 3 types of selectors are commonly used in CSS tagname , id & class */
+/* tagname selector */
+
+h1{   
+    /* where ever h1 appear it will be styled using following style script */
+    text-align: center;  
+}
+
+section{
+    /* where ever section appear it will be styled using following style script */
+    background-color: rgb(248, 241, 241);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
+    height: auto;
+    width: 50%;
+}
+
+#id_selector{
+    /* id selector generally id is unique for each element */
+    color: rgb(40, 109, 80);
+    font-weight: 500;
+}
+
+.class_selector{
+    /* class selector class can be used for multiple elements */
+    color: blue;
+}
+
+nav{
+    display: flex;
+    width: 50%;
+    margin:0 auto;
+    justify-content: space-around;
+    background-color: rgb(237, 245, 241);
+    border-radius: 5px;
+}
+
+nav:hover{
+    background-color: rgb(224, 250, 239);
+    color: white;;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(237, 245, 241);
+    padding: 10px;
+    margin: 10px;
+    list-style-type :none;
+}
+h3{
+    text-align: center;
+}
+
+li a{
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.box-model{
+    width: auto;
+    height: 50vh;
+    background-color: rgb(199, 213, 224);
+    border-radius: 10px;
+    
+    margin: 1rem;
+    border: 30px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+   padding: 4rem;
+   background-color: rgb(57, 155, 201);
+}
+
+.dropbtn{
+    background-color: rgb(237, 245, 241);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropdown-content{
+    display: flex;
+    
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content>*{
+    background-color: rgb(237, 245, 241);
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
